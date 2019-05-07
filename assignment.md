@@ -29,8 +29,8 @@ Implement a `bootstrap` function to randomly draw with replacement from a given 
        -------
        bootstrap_samples: np.array, shape (n, resamples)
          The bootsrap resamples from x.
-"""
-    ```
+       """
+   ```
    
    **Hint:**
    - Use `np.random.randint` to randomly draw the row indexes with replacement
