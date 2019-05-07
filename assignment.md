@@ -13,23 +13,23 @@ Hypothetically, since the sample we have actually collected is our best availabl
 
 Implement a `bootstrap` function to randomly draw with replacement from a given sample. The function should take a sample as a `numpy ndarray` and the number of resamples as an integer  (`default: 10000`). The function should return a list of `numpy ndarray` objects, each ndarray is one bootstrap sample. 
 
-    ```python
-    def bootstrap(x, resamples=10000):
-        """Draw bootstrap resamples from the array x.
+   ```python
+   def bootstrap(x, resamples=10000):
+       """Draw bootstrap resamples from the array x.
 
-	Parameters
-	----------
-	x: np.array, shape (n, )
-	  The data to draw the bootstrap samples from.
-	
-	resamples: int
-	  The number of bootstrap samples to draw from x.
-
-	Returns
-	-------
-	bootstrap_samples: np.array, shape (n, resamples)
-	  The bootsrap resamples from x.
-	"""
+       Parameters
+       ----------
+       x: np.array, shape (n, )
+         The data to draw the bootstrap samples from.
+       
+       resamples: int
+         The number of bootstrap samples to draw from x.
+       
+       Returns
+       -------
+       bootstrap_samples: np.array, shape (n, resamples)
+         The bootsrap resamples from x.
+"""
     ```
    
    **Hint:**
@@ -44,9 +44,9 @@ The bootstrap can be used to provide very simple confidence intervals for a popu
 
 So for example, if, upon bootsrapping, you get
 
-    ```python
-    [1, 1, 1, 2, 2, 3, 4, 4, 5, 6]
-    ```
+   ```python
+   [1, 1, 1, 2, 2, 3, 4, 4, 5, 6]
+   ```
 
 as the bootstraped values of some sample statistic, then the interval `[1, 5]` would be a 20% confidence interval (where the 1 and the 5 are the 10th and 90th percentile of the array of boostrapped values).
 
