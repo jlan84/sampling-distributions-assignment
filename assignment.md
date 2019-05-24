@@ -27,7 +27,7 @@ Implement a `bootstrap` function to randomly draw with replacement from a given 
        
        Returns
        -------
-       bootstrap_samples: np.array, shape (n, resamples)
+       bootstrap_samples: np.array, shape (resamples, n)
          The bootsrap resamples from x.
        """
    ```
@@ -48,7 +48,7 @@ So for example, if, upon bootsrapping, you get
    [1, 1, 1, 2, 2, 3, 4, 4, 5, 6]
    ```
 
-as the bootstraped values of some sample statistic, then the interval `[1, 5]` would be a 20% confidence interval (where the 1 and the 5 are the 10th and 90th percentile of the array of boostrapped values).
+as the bootstraped values of some sample statistic, then the interval `[1, 5]` would be a 80% confidence interval (where the 1 and the 5 are the 10th and 90th percentile of the array of boostrapped values).
 
 Company X wants to find out if changing to Apple monitors increases its programmers' productivity. A random sample of 25 people is chosen and their monitors are switched. The difference between their productivity before and after the monitor switch is recorded in `data/productivity.txt`.
  
