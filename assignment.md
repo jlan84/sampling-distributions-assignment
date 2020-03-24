@@ -33,7 +33,7 @@ Implement a `bootstrap` function to randomly draw with replacement from a given 
    ```
    
    **Hint:**
-   - Use `np.random.randint` to randomly draw the row indexes with replacement
+   - Use `np.random.randint` to randomly draw the row indexes with replacement or `np.random.choice` to randomly draw elements directly
    - Create the bootstrap sample by indexing the original sample with the randomly drawn row indexes
  
 <br>
