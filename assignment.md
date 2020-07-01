@@ -1,9 +1,11 @@
 # The Bootstrap Approximation of Sampling Distributions
 
+## Introduction
+
 The Bootstrap is a common, computationally intensive procedure used to approximate the sampling distribution of any sample statistic (which is probably a point estimate of some unknown population parameter). Its power is derived from its generality: it applies to almost all sample statistics we may care about, while other methods (based primarily on the central limit theorem) only apply to the sample mean.
 
-
-## Part 1: What is Bootstrapping and Why Do We Use It?
+## Basic
+### Part 1: What is Bootstrapping and Why Do We Use It?
 
 The general concept of bootstrapping is to create many samples from the one sample you actually have collected.
 
@@ -38,7 +40,7 @@ Implement a `bootstrap` function to randomly draw with replacement from a given 
  
 <br>
 
-## Part 2: Bootstrap to find Confidence Interval of Mean
+### Part 2: Bootstrap to find Confidence Interval of Mean
 
 The bootstrap can be used to provide very simple confidence intervals for a population parameter.  The empirical quantiles of the bootstrapped sampling distribution can be used as confidence intervals, usuall called bootstrapped confidence intervals.
 
@@ -79,7 +81,9 @@ Company X wants to find out if changing to Apple monitors increases its programm
   
 <br>
 
-## Part 3: Bootstrap to find Confidence Interval of Correlation
+## Advanced
+
+### Part 3: Bootstrap to find Confidence Interval of Correlation
 
 You are interested if there is a positive correlation between the LSAT admission exam score and the first year GPA achieved in law schools. You are given the mean LSAT and mean GPA scores for the students from a sample of 15 law schools.
 
